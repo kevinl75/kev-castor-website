@@ -21,11 +21,12 @@ const HomePage = () => {
       icon: <LuHammer />,
     },
   ];
-  console.log("Bonjour");
-  console.log(nextConfig);
 
   return (
     <div>
+      <p>
+        {nextConfig.basePath} {nextConfig.assetPrefix}
+      </p>
       {/* Hero Section */}
       <div className="py-12 text-center bg-dust-300">
         <div className="container mx-auto px-4 text-dust-900">
