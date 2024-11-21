@@ -52,7 +52,6 @@ export default function ArticleSection({ articles }) {
         </div>
       </div>
 
-      {/* Grille d'articles */}
       <div>
         {filteredArticles.map((article) => (
           <Article

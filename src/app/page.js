@@ -5,8 +5,6 @@ import { LuNewspaper, LuGithub, LuTwitch, LuHammer } from "react-icons/lu";
 import { BsTwitterX } from "react-icons/bs";
 
 const HomePage = () => {
-  // Palette de couleurs ajustée avec des tons plus pastels
-
   const timelineItems = [
     {
       type: "Article",
@@ -28,7 +26,7 @@ const HomePage = () => {
       <div className="py-12 text-center bg-dust-300">
         <div className="container mx-auto px-4 text-dust-900">
           <Image
-            src="/kev-castor-logo.jpeg"
+            src="/kev-castor-website/kev-castor-logo.jpeg"
             alt="logo"
             width={200}
             height={200}
