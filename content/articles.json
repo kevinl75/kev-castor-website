@@ -1,0 +1,11 @@
+[
+  {
+    "id": 1,
+    "title": "Streamlit: Créer des apps en Python très simplement",
+    "description": "Un apperçu de la création d'une app Streamlit pour s'entrainer à l'apprentissage d'une langue étrangère.",
+    "date": "27 Mai 2024",
+    "tags": ["Python", "Streamlit"],
+    "readTime": "12 min",
+    "link": "https://dev.to/kevin75/streamlit-creer-des-apps-en-python-tres-simplement-c97"
+  }
+]

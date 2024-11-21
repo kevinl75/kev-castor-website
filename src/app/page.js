@@ -1,101 +1,92 @@
+import React from "react";
 import Image from "next/image";
 
-export default function Home() {
-  return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.js
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+import { LuNewspaper, LuGithub, LuTwitch, LuHammer } from "react-icons/lu";
+import { BsTwitterX } from "react-icons/bs";
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+const HomePage = () => {
+  // Palette de couleurs ajustée avec des tons plus pastels
+
+  const timelineItems = [
+    {
+      type: "Article",
+      title: "Les bonnes pratiques React en 2024",
+      date: "Il y a 3 jours",
+      icon: <LuNewspaper />,
+    },
+    {
+      type: "Projet",
+      title: "Castor Culture Club",
+      date: "Il y a 1 semaine",
+      icon: <LuHammer />,
+    },
+  ];
+
+  return (
+    <div>
+      {/* Hero Section */}
+      <div className="py-12 text-center bg-dust-300">
+        <div className="container mx-auto px-4 text-dust-900">
+          <Image
+            src="/kev-castor-logo.jpeg"
+            alt="logo"
+            width={200}
+            height={200}
+            className="rounded-full mb-8 justify-self-center"
+          />
+          <h1 className="text-4xl font-bold mb-6">
+            Bienvenue dans mon univers !
+          </h1>
+          <p className="text-xl mb-8">
+            Gaming 🎮 | Developpement 💻 | Creation de contenu 🎥
+          </p>
+          <div className="flex justify-center gap-4 text-stone-100">
+            <a
+              href="#"
+              className="p-4 rounded-full hover:bg-opacity-80 bg-cactus-600"
+            >
+              <LuTwitch className="w-6 h-6" />
+            </a>
+            <a
+              href="#"
+              className="p-4 rounded-full hover:bg-opacity-80 bg-cactus-600"
+            >
+              <BsTwitterX className="w-6 h-6" />
+            </a>
+            <a
+              href="#"
+              className="p-4 rounded-full hover:bg-opacity-80 bg-cactus-600"
+            >
+              <LuGithub className="w-6 h-6" />
+            </a>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+      </div>
+
+      <div className="container mx-auto py-12 px-4">
+        <h2 className="text-3xl font-bold mb-12 text-center text-amber-900">
+          Dernieres publications
+        </h2>
+        <div className="max-w-3xl mx-auto">
+          {timelineItems.map((item, index) => (
+            <div key={index} className="flex gap-4 mb-8">
+              <div className="p-3 rounded-full content-center bg-cactus-600">
+                {React.cloneElement(item.icon, {
+                  className: "w-6 h-6 text-stone-100",
+                })}
+              </div>
+              <div className="flex-1">
+                <div className="bg-amber-200 p-6 rounded-lg shadow-sm text-amber-900">
+                  <span className="text-sm">{item.date}</span>
+                  <h3 className="text-lg font-semibold mt-1">{item.title}</h3>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
     </div>
   );
-}
+};
+
+export default HomePage;

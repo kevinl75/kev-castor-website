@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "title": "Sport Cast",
+    "description": "Outils de prediction des résultats de foot utilisant la loi de Poisson. Outils développé en Python avec Pandas et Streamlit.",
+    "link": "https://github.com/kevinl75/sportcast",
+    "image": "/sportcast.png",
+    "tags": ["Python", "Streamlit", "Pandas", "Statistiques"]
+  },
+  {
+    "id": 2,
+    "title": "Castor Culture Club (WIP)",
+    "description": "Sens critique, mais pour une communauté réduite. Partagez vos recommendations culturelles juste avec vos amis, votre famille ou vos collègues. Application réalisé en React, TailwindCSS. Backend en FastAPI (Python)",
+    "link": "https://github.com/kevinl75/castor-culture-club-front",
+    "image": "/castor-culture-club-home.png",
+    "tags": ["Python", "FastAPI", "React", "TailwindCSS"]
+  },
+  {
+    "id": 3,
+    "title": "Portfolio template",
+    "description": "Vous êtes dessus ! Retrouvez le template de ce portofolio si vous souhaitez créer le votre.",
+    "link": "https://github.com/kevinl75/kev-castor-website",
+    "image": "/portfolio-template-2.png",
+    "tags": ["React", "TailwindCSS"]
+  }
+]
