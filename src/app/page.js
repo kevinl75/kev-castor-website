@@ -21,7 +21,7 @@ const HomePage = () => {
       icon: <LuHammer />,
     },
   ];
-
+  console.log("Bonjour");
   console.log(nextConfig);
 
   return (
