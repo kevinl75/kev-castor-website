@@ -4,6 +4,8 @@ import Image from "next/image";
 import { LuNewspaper, LuGithub, LuTwitch, LuHammer } from "react-icons/lu";
 import { BsTwitterX } from "react-icons/bs";
 
+import nextConfig from "../../next.config";
+
 const HomePage = () => {
   const timelineItems = [
     {
@@ -19,6 +21,8 @@ const HomePage = () => {
       icon: <LuHammer />,
     },
   ];
+
+  console.log(nextConfig);
 
   return (
     <div>
