@@ -1,7 +1,6 @@
 /** @type {import('next').NextConfig} */
 const isProd = process.env.NODE_ENV == "production";
 const nextConfig = {
-  isProdTest: isProd,
   reactStrictMode: true,
   images: {
     unoptimized: true,

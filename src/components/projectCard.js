@@ -21,9 +21,7 @@ const ProjectCard = ({
       }
     >
       <div className="w-full">
-        <Image
-          height={800}
-          width={1600}
+        <img
           src={projectImage}
           alt="Football Prediction app"
           className="w-full h-62 object-cover rounded-t-md"

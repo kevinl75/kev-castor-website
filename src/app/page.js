@@ -1,10 +1,8 @@
+/* eslint-disable @next/next/no-img-element */
 import React from "react";
-import Image from "next/image";
 
 import { LuNewspaper, LuGithub, LuTwitch, LuHammer } from "react-icons/lu";
 import { BsTwitterX } from "react-icons/bs";
-
-import nextConfig from "../../next.config.mjs";
 
 const HomePage = () => {
   const timelineItems = [
@@ -24,18 +22,13 @@ const HomePage = () => {
 
   return (
     <div>
-      <p>
-        {nextConfig.basePath} {nextConfig.assetPrefix}
-      </p>
       {/* Hero Section */}
       <div className="py-12 text-center bg-dust-300">
         <div className="container mx-auto px-4 text-dust-900">
-          <Image
-            src="/kev-castor-website/kev-castor-logo.jpeg"
+          <img
+            src="/kev-castor-logo.jpeg"
             alt="logo"
-            width={200}
-            height={200}
-            className="rounded-full mb-8 justify-self-center"
+            className="rounded-full mb-8 justify-self-center w-60 h-60"
           />
           <h1 className="text-4xl font-bold mb-6">
             Bienvenue dans mon univers !
