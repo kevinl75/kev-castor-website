@@ -1,5 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
+import Image from "next/image";
+
 import { LuChevronRight } from "react-icons/lu";
 
 const ProjectCard = ({
@@ -19,7 +21,9 @@ const ProjectCard = ({
       }
     >
       <div className="w-full">
-        <img
+        <Image
+          height={800}
+          width={1600}
           src={projectImage}
           alt="Football Prediction app"
           className="w-full h-62 object-cover rounded-t-md"
