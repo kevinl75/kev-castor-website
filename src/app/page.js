@@ -4,7 +4,7 @@ import Image from "next/image";
 import { LuNewspaper, LuGithub, LuTwitch, LuHammer } from "react-icons/lu";
 import { BsTwitterX } from "react-icons/bs";
 
-import nextConfig from "../../next.config";
+import nextConfig from "../../next.config.mjs";
 
 const HomePage = () => {
   const timelineItems = [
