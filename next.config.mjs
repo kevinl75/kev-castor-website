@@ -1,5 +1,5 @@
 /** @type {import('next').NextConfig} */
-const isProd = process.env.NODE_ENV === "production";
+const isProd = process.env.NODE_ENV != "dev";
 const nextConfig = {
   reactStrictMode: true,
   images: {
