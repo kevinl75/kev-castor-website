@@ -1,6 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
-
 import Link from "next/link";
 import Image from "next/image";
 
@@ -9,10 +8,12 @@ const NavBar = () => {
     <nav className="p-4 shadow-sm bg-cactus-600 text-stone-100">
       <div className="container mx-auto flex justify-between items-center">
         <div className="flex items-center gap-6">
-          <img
-            src="/kev-castor-logo.jpeg"
-            alt="logo"
-            className="rounded-full w-16 h-16"
+          <Image
+            width={60}
+            height={60}
+            src="/kev-castor-website/kev-castor-logo.jpeg"
+            alt="Logo"
+            className="rounded-full"
           />
           <span className="text-2xl font-bold">Kev Castor</span>
         </div>

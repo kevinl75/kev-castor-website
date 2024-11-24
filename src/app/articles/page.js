@@ -8,9 +8,12 @@ export default async function Page() {
   return (
     <div>
       <div className="py-12 text-center bg-dust-300 text-dust-900">
-        <h1 className="text-4xl font-bold">Articles</h1>
-        <p className="mt-4 text-lg">
-          Découvrez mes articles sur le dev, le gaming et la tech
+        <h1 className="text-4xl font-bold">
+          Explorations tech, découvertes et retours d&apos;expérience.
+        </h1>
+        <p className="mt-4 text-xl">
+          Retrouvez ici mes analyses et mes apprentissages. Un mélange de bonnes
+          pratiques, de découvertes et de réflexions sur le monde de la tech !
         </p>
       </div>
 

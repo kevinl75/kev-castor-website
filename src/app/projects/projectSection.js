@@ -8,11 +8,11 @@ export default function ProjectSection({ projects }) {
         {projects.map((project, index) => (
           <ProjectCard
             key={index}
-            projectName={project.title}
-            projectDesc={project.description}
-            projectImage={project.image}
-            projectTags={project.tags}
-            projectLink={project.link}
+            name={project.title}
+            desc={project.description}
+            image={project.image}
+            tags={project.tags}
+            link={project.link}
             isLastAndEven={
               index == projects.length - 1 && index % 2 == 0 ? true : false
             }

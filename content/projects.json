@@ -1,10 +1,13 @@
 [
   {
     "id": 1,
-    "title": "Sport Cast",
+    "title": "Foot Cast",
     "description": "Outils de prediction des résultats de foot utilisant la loi de Poisson. Outils développé en Python avec Pandas et Streamlit.",
     "link": "https://github.com/kevinl75/sportcast",
-    "image": "/sportcast.png",
+    "image": {
+      "src": "/kev-castor-website/sportcast.png",
+      "alt": "Foot Cast"
+    },
     "tags": ["Python", "Streamlit", "Pandas", "Statistiques"]
   },
   {
@@ -12,7 +15,10 @@
     "title": "Castor Culture Club (WIP)",
     "description": "Sens critique, mais pour une communauté réduite. Partagez vos recommendations culturelles juste avec vos amis, votre famille ou vos collègues. Application réalisé en React, TailwindCSS. Backend en FastAPI (Python)",
     "link": "https://github.com/kevinl75/castor-culture-club-front",
-    "image": "/castor-culture-club-home.png",
+    "image": {
+      "src": "/kev-castor-website/castor-culture-club-home.png",
+      "alt": "Castor Culture Club"
+    },
     "tags": ["Python", "FastAPI", "React", "TailwindCSS"]
   },
   {
@@ -20,7 +26,10 @@
     "title": "Portfolio template",
     "description": "Vous êtes dessus ! Retrouvez le template de ce portofolio si vous souhaitez créer le votre.",
     "link": "https://github.com/kevinl75/kev-castor-website",
-    "image": "/portfolio-template-2.png",
+    "image": {
+      "src": "/kev-castor-website/portfolio-template-2.png",
+      "alt": "Portfolio website"
+    },
     "tags": ["React", "TailwindCSS"]
   }
 ]
